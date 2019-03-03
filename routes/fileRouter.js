@@ -1,8 +1,13 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
+/* Webhook testing*/
 router.get('/update', function(req, res, next) {
+  console.log(req.body);
+  res.send('respond with a resource');
+});
+/* Webhook posting */
+router.post('/update', function(req, res, next) {
   console.log(req.body);
   res.send('respond with a resource');
 });
