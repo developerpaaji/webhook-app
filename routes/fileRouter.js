@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* Webhook testing*/
 router.get('/update', function(req, res, next) {
-  var challenge=req.params.challenge;
+  var challenge=req.query.challenge;
   console.log(req.body);
   res.send(challenge);
 });
