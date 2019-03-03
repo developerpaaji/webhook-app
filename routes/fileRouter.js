@@ -4,12 +4,12 @@ var router = express.Router();
 /* Webhook testing*/
 router.get('/update', function(req, res, next) {
   console.log(req.body);
-  res.send('respond with a resource');
+  res.send('nxIKj-ZRT1TEoCvqe6d1AkWdaZU4L5fGpgI16lxGBI4');
 });
 /* Webhook posting */
 router.post('/update', function(req, res, next) {
   console.log(req.body);
-  res.send('respond with a resource');
+  res.send('nxIKj-ZRT1TEoCvqe6d1AkWdaZU4L5fGpgI16lxGBI4');
 });
 
 module.exports = router;
