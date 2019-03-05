@@ -7,6 +7,7 @@ module.exports=(sequelize,Datatypes)=>{
         path_lower:{type:Datatypes.STRING,unique:true},
         id:{type:Datatypes.STRING,unique:true,primaryKey:true},
         date_modified:{type:Datatypes.DATE,defaultValue:Datatypes.NOW},
-        size:{type:Datatypes.INTEGER}
+        size:{type:Datatypes.INTEGER},
+        content_hash:{type:Datatypes.STRING},
        });
 }
